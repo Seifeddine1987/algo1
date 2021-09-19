@@ -1,0 +1,50 @@
+lengthOfASentence
+
+VAR
+    x = "STRING"
+    y = INTEGER
+
+BEGIN
+    FOR (y i=0; i<x.length();i++) DO
+       IF(x.charAt[i]!=" ") THEN
+         count++
+       END IF
+    END FOR
+    write(y)
+
+END
+
+
+
+
+WordsNumberInASentence
+
+VAR
+    x = "string"
+    y = INTEGER
+BEGIN
+    FOR i in x DO
+       IF (x[i]==" ")  THEN
+          count++
+       END IF
+    END FOR
+    write(y)
+END
+
+
+
+
+ALGORITHM NumberOfVoyelles
+
+VAR
+   x = "string"
+   y = INTEGER
+   ListOfvoyelles:CHAR:=["a","o","i","e","u","y"]
+BEGIN
+    FOR i in x DO
+      IF i in ListOfvoyelles THEN  
+        count++
+      END IF
+    END FOR  
+    write (y)  
+END 
